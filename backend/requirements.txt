@@ -1,0 +1,7 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+snowflake-connector-python==3.7.0
+snowflake-sqlalchemy==1.8.2
+pyproj==3.7.2

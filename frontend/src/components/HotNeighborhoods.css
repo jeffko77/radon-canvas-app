@@ -1,0 +1,176 @@
+.hot-neighborhoods-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+}
+
+.hot-neighborhoods-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hot-neighborhood-card {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.hot-neighborhood-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.hot-neighborhood-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.hot-neighborhood-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.hot-neighborhood-stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  min-width: 120px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hot-neighborhood-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.detail-item {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  color: #555;
+  font-size: 0.9375rem;
+}
+
+.detail-item strong {
+  color: #333;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.app-neighborhood-link {
+  padding: 1rem;
+  background: #eff6ff;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  color: #1e40af;
+}
+
+.risk-indicator {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.risk-indicator-header {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.risk-indicator-content {
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+.badge-very-high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-high {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badge-medium {
+  background: #fed7aa;
+  color: #92400e;
+}
+
+.badge-low {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-ward {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-zip {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+@media (max-width: 768px) {
+  .hot-neighborhoods-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .hot-neighborhood-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hot-neighborhood-stats {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
